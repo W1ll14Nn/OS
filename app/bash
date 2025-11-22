@@ -1,1 +1,2 @@
 app/(auth)/signup/page.tsx
+app/dashboard/page.tsx

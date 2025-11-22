@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-
+import SignOutButton from './SignOutButton';
 export default function Header(){
   return (
     <header style={{background:'#fff',padding:12,boxShadow:'0 1px 3px rgba(0,0,0,0.06)'}}>
@@ -11,8 +11,8 @@ export default function Header(){
         </div>
         <nav style={{display:'flex',gap:12}}>
           <Link href="/dashboard">Dashboard</Link>
-          <Link href="/os">Ordens</Link>
-          <Link href="/clientes">Clientes</Link>
+          <Link href="/auth/login">Entrar</Link>
+          <SignOutButton />
         </nav>
       </div>
     </header>
